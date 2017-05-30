@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                tools:context="udacity.android5things.Page4">
+
+    <TextView
+        android:id="@+id/textViewHeader4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="4. THERE ARE VERY FEW PLANT-EATING REPTILES"
+        android:textStyle="bold"/>
+
+    <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_below="@+id/textViewHeader4"
+            app:srcCompat="@drawable/page4"
+            android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_below="@id/imageView4"
+        android:text="During the Mesozoic Era, some of the biggest reptiles on earth were devoted plant-eaters—witness the multi-ton likes of Triceratops and Diplodocus. Today, oddly enough, the only herbivorous reptiles are turtles and iguanas (both of which are only remotely related to their dinosaur forebears), while crocodiles, snakes, lizards, and tuataras subsist on vertebrate and invertebrate animals. Some marine reptiles (like saltwater crocodiles) have also been known to swallow rocks, which weigh down their bodies and act as ballast, so they can surprise prey by leaping out of the water."/>
+
+    <Button
+        android:id="@+id/buttonPrev4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="Prev"
+        android:text="Prev"/>
+
+    <Button
+        android:id="@+id/buttonStartOver4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="StartOver"
+        android:text="Start Over"/>
+
+    <Button
+        android:id="@+id/buttonNext4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="Next"
+        android:text="Next"/>
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                tools:context="udacity.android5things.Page3">
+
+    <TextView
+        android:id="@+id/textViewHeader3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="3. ALL REPTILES HAVE SCALY SKIN"
+        android:textStyle="bold"/>
+
+    <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_below="@+id/textViewHeader3"
+            app:srcCompat="@drawable/page3"
+            android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_below="@id/imageView3"
+        android:text="The rough, vaguely alien quality of reptilian skin makes some people uneasy, but the fact is that these scales represent a major evolutionary leap: for the first time, thanks to this layer of protection, vertebrate animals could move away from bodies of water without risk of drying out. As they grow, some reptiles, like snakes, shed their skin all in one piece, while others do it a few flakes at a time. As tough as it is, the skin of reptiles is fairly thin, which is why snake leather (for example) is strictly decorative when used for cowboy boots, and is much less useful than multi-purpose cowhide!"/>
+
+    <Button
+        android:id="@+id/buttonPrev3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="Prev"
+        android:text="Prev"/>
+
+    <Button
+        android:id="@+id/buttonStartOver3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="StartOver"
+        android:text="Start Over"/>
+
+    <Button
+        android:id="@+id/buttonNext3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="Next"
+        android:text="Next"/>
+</RelativeLayout>

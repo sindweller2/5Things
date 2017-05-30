@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                tools:context="udacity.android5things.Page1">
+
+    <TextView
+        android:id="@+id/textViewHeader1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="1. REPTILES EVOLVED FROM AMPHIBIANS"
+        android:textStyle="bold"/>
+
+    <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/page1"
+            android:scaleType="fitXY"
+            android:layout_below="@+id/textViewHeader1"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_below="@id/imageView1"
+        android:text="Yes, it's a gross simplification, but it's fair to say that fish evolved into tetrapods, tetrapods evolved into amphibians, and amphibians evolved into reptiles—all of these events taking place between 400 and 300 million years ago. And that's not the end of the story: about 200 million years ago, the reptiles we know as therapsids evolved into mammals (at the same time the reptiles we know as archosaurs evolved into dinosaurs), and another 50 million years after that, the reptiles we know as dinosaurs evolved into birds. This 'in-betweeness' of reptiles may help to explain their relative scarcity today."/>
+
+    <Button
+        android:id="@+id/buttonStartOver1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="StartOver"
+        android:text="Start Over"/>
+
+    <Button
+        android:id="@+id/buttonNext1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="Next"
+        android:text="Next"/>
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                tools:context="udacity.android5things.Page2">
+
+    <TextView
+        android:id="@+id/textViewHeader2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="2. THERE ARE FOUR MAIN REPTILE GROUPS"
+        android:textStyle="bold"/>
+
+    <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_below="@+id/textViewHeader2"
+            app:srcCompat="@drawable/page2"
+            android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_below="@id/imageView2"
+        android:text="You can count the varieties of reptile alive today on one hand: turtles, which are characterized by their slow metabolisms and protective shells; squamates, including snakes and lizards, which shed their skins and have wide-opening jaws; crocodilians, which are the closest living relatives of both modern birds and extinct dinosaurs; and the strange creatures known as tuataras, which today are restricted to a few remote islands of New Zealand. (Just to show how far reptiles have fallen, pterosaurs, which once ruled the skies, and marine reptiles, which once ruled the oceans, went extinct along with the dinosaurs 65 million years ago.)"/>
+
+    <Button
+        android:id="@+id/buttonPrev2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="Prev"
+        android:text="Prev"/>
+
+    <Button
+        android:id="@+id/buttonStartOver2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="StartOver"
+        android:text="Start Over"/>
+
+    <Button
+        android:id="@+id/buttonNext2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="Next"
+        android:text="Next"/>
+</RelativeLayout>
