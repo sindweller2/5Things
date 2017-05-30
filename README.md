@@ -1,2 +1,2 @@
-# 5Things
-Udacity Final Project 1 (beginner)
+# 5 Facts Reptiles
+Udacity Android Final Project 1 (beginner)
