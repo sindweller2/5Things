@@ -1,7 +1,7 @@
 # 5 Facts Reptiles
 Udacity Android Final Project 1 (beginner)
 
-##Content
+## Content
 - bin : compiled binary
 - src : source code
 
